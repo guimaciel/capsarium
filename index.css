@@ -263,7 +263,7 @@ content {
 .produtos {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
 }
 
@@ -367,7 +367,7 @@ content {
 }
 
 .pdf {
-  width: 100vh;
+  width: 90vw;
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -392,4 +392,92 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 1rem;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+  }
+  .historia {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .quem-somos {
+    width: 100%;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+    margin: 0;
+  }
+
+  .projeto {
+    margin: 0;
+    flex-direction: column;
+  }
+  .projeto-top {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  /* .projeto-top > img {
+    width: 100%;
+  } */
+  .projeto-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .compromisso {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .produtos {
+    row-gap: 1rem;
+  }
+
+  .proposta {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .proposta > * {
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .revitalizacao {
+    padding: 0;
+    margin: 0;
+  }
+
+  .revitalizacao-text {
+    padding: 0;
+  }
+
+  .urnas,
+  .urnas-fotos,
+  .urnas-pict,
+  .ppt,
+  .revitalizacao-top {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  .ppt {
+    padding: 1rem 0;
+    width: 100%;
+    height: auto;
+  }
 }
