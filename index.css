@@ -31,7 +31,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 2rem 2rem 1rem 2rem;
+  padding: 1rem 2rem;
 }
 
 .menu {
@@ -66,6 +66,7 @@ content {
   height: 90vh;
   background-image: url("./img/family.png");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
@@ -442,6 +443,13 @@ svg {
   .menu {
     flex-direction: column;
   }
+
+  .content-img {
+    width: 100%;
+    min-height: 50vh;
+    height: auto;
+  }
+
   .historia {
     display: flex;
     flex-direction: column;
@@ -532,4 +540,57 @@ svg {
   .contato-data-linha {
     justify-content: center;
   }
+}
+
+.idioma {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  padding: 0.2rem 0.5rem;
+  background-color: #fdfdfd;
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 10px;
+}
+
+.switch {
+  position: relative;
+  width: 21px;
+  height: 11px;
+}
+
+.switch input {
+  opacity: 0;
+}
+
+.slider {
+  position: absolute;
+  inset: 0;
+  background: #3f940d;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.slider::before {
+  content: "";
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  left: 1px;
+  bottom: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background: #ec0909;
+}
+
+input:checked + .slider::before {
+  transform: translateX(10px);
 }

@@ -7,25 +7,37 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="idioma">
+      <div class="lang-toggle">
+        <span id="langLabel">PT</span>
+        <label class="switch">
+          <input type="checkbox" id="languageToggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
     <header>
       <div class="logo">
         <img src="./img/logo-capsarium.png" alt="Capsarium" />
       </div>
       <div class="menu">
-        <a href="#home">Home</a>
-        <a href="#apresentacao">Apresentação</a>
-        <a href="#quemsomos">Quem Somos</a>
-        <a href="#produtos">Produtos</a>
-        <a href="#contato">Contato</a>
-        <a href="#redescociais">Redes Sociais</a>
+        <a href="#home" data-i18n="menu.home">Home</a>
+        <a href="#apresentacao" data-i18n="menu.presentation">Apresentação</a>
+        <a href="#quemsomos" data-i18n="menu.about">Quem Somos</a>
+        <a href="#produtos" data-i18n="menu.products">Produtos</a>
+        <a href="#contato" data-i18n="menu.contact">Contato</a>
+        <a href="#contato" data-i18n="menu.social">Redes Sociais</a>
       </div>
     </header>
+
     <content>
       <div class="content-img"></div>
       <!-- <img src="./img/family.png" alt="" /> -->
       <div class="capsarium" id="apresentacao">
-        <h1>Capsarium, preservando o legado familiar!</h1>
-        <p>
+        <h1 data-i18n="hero.title">
+          Capsarium, preservando o legado familiar!
+        </h1>
+        <p data-i18n="hero.text">
           É uma empresa focada em sustentabilidade socioambiental assistida, em
           cima da filosofia que não precisamos contaminar o mundo após a morte
           “partida”, deixaremos de virar “lixo contaminante” para virar energia
@@ -39,8 +51,8 @@
       </div>
       <hr />
       <div class="quem-somos" id="quemsomos">
-        <h2>Quem somos</h2>
-        <p>
+        <h2 data-i18n="about.title">Quem somos</h2>
+        <p data-i18n="about.text1">
           Grupo Capsarium é a primeira startup brasileira no seguimento
           funerário e parque memorial (cemitério) mais sustentável e humanizado!
         </p>
@@ -49,11 +61,7 @@
       </div>
 
       <div class="grupo">
-        <p>
-          Grupo Capsarium é a primeira startup brasileira no seguimento
-          funerário e parque memorial (cemitério) mais sustentável e humanizado!
-        </p>
-        <p>
+        <p data-i18n="about.text2">
           Usando inovação tecnológica, com o compromisso socioambiental, focada
           em soluções eco-sustentáveis, voltado para a revitalização dos
           memoriais parques públicos e privados, desenvolvendo a cada dia novas
@@ -70,8 +78,8 @@
           <img src="./img/fotos-historia.png" alt="" />
         </div>
         <div class="historia-texto">
-          <h2>Nossa história</h2>
-          <p>
+          <h2 data-i18n="history.title">Nossa história</h2>
+          <p data-i18n="history.text1">
             Um legado deixado há mais de 1 século de experiência dedicados pela
             nossa ancestralidade ao seguimento funerário passando de gerações
             após gerações, reescrevendo a histórias ao logo de décadas. Muitos
@@ -79,7 +87,7 @@
             serviços prestados ao longo dos anos e as mudanças nos padrões
             ambientais, passaram exigir mudanças de sustentabilidade.
           </p>
-          <p>
+          <p data-i18n="history.text2">
             Por esses motivos em 2012 iniciamos uma série de pesquisas junto com
             universidades e centros de pesquisa renomados visando substituir a
             moldura nas urnas funerárias, o modelo atual, urnas de madeira,
@@ -94,8 +102,8 @@
       <hr />
       <div class="cards">
         <div class="cards-item">
-          <p>Missão (icone personalizado)</p>
-          <p>
+          <p data-i18n="cards.card1.title">Missão (icone personalizado)</p>
+          <p data-i18n="cards.card1.text">
             Nossa missão é reduzir ou até eliminar os impactos ambientais
             provocados pelo Resíduo Contínuo Contaminante (RCC) gerado nesses
             espaços, por meio de novas tecnologias e processos ambientalmente
@@ -104,14 +112,14 @@
           </p>
         </div>
         <div class="cards-item">
-          <p>Visão (icone personalizado)</p>
-          <p>
+          <p data-i18n="cards.card2.title">Visão (icone personalizado)</p>
+          <p data-i18n="cards.card2.text">
             Preservar a memoria das pessoas e seu legado construído na linha do
             tempo.
           </p>
         </div>
         <div class="cards-item">
-          <p>
+          <p data-i18n="cards.card3">
             Podemos afirmar que vamos trocar a condição “ lixo “, para a fórmula
             de bio combustível, crédito carbono, “ A vida continua sendo vida
             pós morte “, temos o primeiro modelo de sepultura combinada com o
@@ -125,7 +133,7 @@
         <div class="projeto-top">
           <img src="./img/logo-capsarium.png" alt="" />
           <div class="projeto-top-texto">
-            <p>
+            <p data-i18n="cards.card4">
               Projeto Capsarium é uma tecnologia inovadora no seguimento
               funerário e revitalização dos memoriais parques (cemitérios).
             </p>
@@ -135,30 +143,34 @@
           <div class="projeto-bottom-item">
             <div class="proj-item-img proj-inovacao"></div>
             <!-- <img src="./img/inovacao.png" alt="" /> -->
-            <p>Inovação</p>
+            <p data-i18n="cards.card5">Inovação</p>
           </div>
           <div class="projeto-bottom-item">
             <div class="proj-item-img proj-sust"></div>
             <!-- <img src="./img/sustentabilidade.png" alt="" /> -->
-            <p>Sustentabilidade</p>
+            <p data-i18n="cards.card6">Sustentabilidade</p>
           </div>
           <div class="projeto-bottom-item">
             <div class="proj-item-img proj-tec"></div>
             <!-- <img src="./img/tecnologia.png" alt="" /> -->
-            <p>Tecnologia</p>
+            <p data-i18n="cards.card7">Tecnologia</p>
           </div>
         </div>
       </div>
       <div class="compromisso">
         <img src="./img/mundo-verde.png" alt="" />
         <div class="comprimosso-texto">
-          <p>
+          <p data-i18n="compromisso.text1">
             Compromisso com a Sustentabilidade e a Legislação Nosso projeto está
             em total conformidade com a legislação vigente, incluindo:
           </p>
-          <p>Lei da Inovação Tecnológica (10.973/2004) e suas atualizações;</p>
-          <p>Marco Legal das Startups (182/2021) e suas atualizações;</p>
-          <p>
+          <p data-i18n="compromisso.text2">
+            Lei da Inovação Tecnológica (10.973/2004) e suas atualizações;
+          </p>
+          <p data-i18n="compromisso.text3">
+            Marco Legal das Startups (182/2021) e suas atualizações;
+          </p>
+          <p data-i18n="compromisso.text4">
             Política Nacional de Resíduos Sólidos (PNRS – 12.305/2010) e suas
             regulamentações estaduais.
           </p>
@@ -167,23 +179,23 @@
       <div class="proposta">
         <!-- <img src="./img/borboleta.png" alt="" /> -->
         <!-- <div class="proposta-text"> -->
-        <h2>Nossa proposta</h2>
-        <p>
+        <h2 data-i18n="proposta.title">Nossa proposta</h2>
+        <p data-i18n="proposta.text1">
           Permitir uma mudança radical na logística da estrutura das empresas,
           reduzindo gastos operacionais e criando o primeiro modelo de logística
           reversa da urna e dos restos mortais “no mundo” - não há nada
           semelhante à nossa proposta.
         </p>
-        <p>
+        <p data-i18n="proposta.text2">
           Estamos entrando na era do serviço funerário 4.0, permitindo as
           pessoas, participarem, opinarem e escolherem a homenagem customizada
           ao seu ente querido.
         </p>
-        <p>
+        <p data-i18n="proposta.text3">
           Em toda a nossa linha do tempo, customizamos nossos costumes,
           personalizando eventos, lares, festas, objetos etc.
         </p>
-        <p>
+        <p data-i18n="proposta.text4">
           Agora teremos a opção de customizar a última homenagem ao nosso ente
           querido, que estará pontuando com uma história de vida e um legado
           familiar.
@@ -191,30 +203,32 @@
         <!-- </div> -->
       </div>
       <div class="revitalizacao">
-        <h2>Revitalização</h2>
+        <h2 data-i18n="revitalizacao.title">Revitalização</h2>
         <div class="revitalizacao-top">
           <img src="./img/cemiterio.png" alt="" />
           <img src="./img/tumulo-caps.png" alt="" />
         </div>
 
         <div class="revitalizacao-text">
-          <p>
+          <p data-i18n="revitalizacao.text1">
             Revitalizar os ambientes atuais dos cemitérios públicos, permitindo
             um novo layout e sua ampliação de capacidade, sem a necessidade de
             grandes investimentos, os modelos de edificações caros,
             ............................. e dificultando o acesso as pessoas de
             ...............
           </p>
-          <p>
+          <p data-i18n="revitalizacao.text2">
             Será possível e viável aumentar a capacidade ocupacional dos atuais
             sem restauração cara ou com custo social alto.
           </p>
-          <p>
+          <p data-i18n="revitalizacao.text3">
             Valores ....................... esses espaços. Inclusive eliminando
             o custo de:
           </p>
-          <p>cimentos, pedras, ..........., metais, areia e brita.</p>
-          <p>
+          <p data-i18n="revitalizacao.text4">
+            cimentos, pedras, ..........., metais, areia e brita.
+          </p>
+          <p data-i18n="revitalizacao.text5">
             Utilizando materiais nobres, que durem mais de 500 anos,
             reciclaveis, reutilizaveis, acabando coma a proliferação de insetos,
             artropedes e outros que usam as sepulturas como fonte de alimentos.
@@ -222,8 +236,8 @@
         </div>
       </div>
       <div class="produtos" id="produtos">
-        <h2>Produtos:</h2>
-        <h2>Urnas / Urnas pet / lóculos</h2>
+        <h2 data-i18n="products.title1">Produtos:</h2>
+        <h2 data-i18n="products.title2">Urnas / Urnas pet / lóculos</h2>
         <div class="urnas">
           <div class="urnas-img urna01"></div>
           <div class="urnas-img urna02"></div>
@@ -251,12 +265,12 @@
           <div class="urnas-pict fotos16"></div>
         </div>
         <div class="produtos-texto">
-          <p>Equipe</p>
-          <p>
+          <p data-i18n="team.title">Equipe</p>
+          <p data-i18n="team.text">
             Empresários, pesquisadores e universidades como UFTM, P&D (Sara) e
             outros profissionais qualificados
           </p>
-          <p>Parceiros</p>
+          <p data-i18n="partners.title">Parceiros</p>
           <p>UFTM – Universidade Federal do Triângulo Mineiro</p>
           <p>MP – Ministério público</p>
           <p>IFTM – Instituto Federal do Triângulo Mineiro</p>
@@ -276,7 +290,6 @@
         <video
           class="video-obj"
           controls
-          autoplay
           loop
           preload="auto"
           poster="./img/video-loading.png"
@@ -287,7 +300,7 @@
       </div>
     </content>
     <footer id="contato">
-      <h2>Contato</h2>
+      <h2 data-i18n="contact.title">Contato</h2>
       <div class="contato-info">
         <div class="logo-footer">
           <img src="./img/logo-capsarium.png" alt="" />
@@ -388,5 +401,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
