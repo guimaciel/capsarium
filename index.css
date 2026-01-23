@@ -31,7 +31,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0 1rem 1rem 1rem;
 }
 
 .menu {
@@ -51,6 +51,39 @@ header {
 
 .menu > a:hover {
   text-decoration: underline;
+}
+
+.menu-mobile,
+.menu-mobile-list,
+#check {
+  display: none;
+}
+
+.checkbtn {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+#check:checked ~ .menu-mobile-list {
+  display: block;
+}
+.menu-mobile-list {
+  position: absolute;
+  top: 5.5rem;
+  right: 0;
+  background: #f0e7cc;
+  z-index: 1;
+  width: 200px;
+}
+.menu-mobile-list a {
+  color: #000;
+  padding: 1rem 1.5rem;
+  display: block;
+  text-decoration: none;
+}
+.menu-mobile-list a:hover {
+  background-color: #b9b29d;
 }
 
 content {
@@ -441,7 +474,10 @@ svg {
 
 @media (max-width: 768px) {
   .menu {
-    flex-direction: column;
+    display: none;
+  }
+  .menu-mobile {
+    display: block;
   }
 
   .content-img {
